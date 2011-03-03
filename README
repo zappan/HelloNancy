@@ -1,0 +1,7 @@
+This is a Hello World project in Nancy web framework, using WebMatrix as a dev environment.
+
+The first goal is to set up a lightweight stack build around WebMatrix with Nancy, Simple.Data,
+Spark View Engine and more (if needed)...
+
+The second goal is to be able to use that stack for to build small quick apps that will be
+deployed in a cloud PaaS hosting environment like Moncai or AppHarbor.
