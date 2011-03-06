@@ -17,5 +17,10 @@ public class HelloWorldModule : NancyModule
 		Get["/test"] = x => {
 			return "This is the Test route";
 		};
+		
+		Get["/spark"] = x => {
+			var model = new Person { FirstName = "Nancy", LastName = "Spark" };
+			return View["spark", model];
+		};
 	}
 }
