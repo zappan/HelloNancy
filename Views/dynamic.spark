@@ -1,0 +1,10 @@
+﻿<viewdata model="dynamic" />
+<html>
+<head>
+    <title>Nancy - Spark View Engine</title>
+</head>
+<body>
+    <h1>The name's ${Model.FirstName}, ${Model.FullName}</h1>
+    <p>This is a sample Spark view through the Nancy web framework!</p>
+</body>
+</html>

@@ -24,6 +24,11 @@ public class HelloWorldModule : NancyModule
 			return "This is the Test route";
 		};
 		
+		Get["/dynamic"] = parameters => {
+			var model = new { FirstName = "Jane", LastName = "Doe", FullName = "Jane Doe" };
+			return View["dynamic", model];
+		};
+		
 		Get["/spark"] = parameters => {
 			var db = Database.OpenFile(DbPath);
 			Person model = db.Persons.FindById(1);
