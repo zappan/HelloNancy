@@ -25,7 +25,7 @@ public class HelloWorldModule : NancyModule
 		};
 		
 		Get["/dynamic"] = parameters => {
-			var model = new { FirstName = "Jane", LastName = "Doe", FullName = "Jane Doe" };
+			dynamic model = new { FirstName = "Jane", LastName = "Doe", FullName = "Jane Doe" };
 			return View["dynamic", model];
 		};
 		
